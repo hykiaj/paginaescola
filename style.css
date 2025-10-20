@@ -6,6 +6,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #333;
 }
 
 /* ====== CABEÇALHO ====== */
@@ -21,25 +23,23 @@ header {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .cabecalho_imagem {
-  width: 10%;
+  width: 100px;
 }
 
 .titulo_site {
-  padding: 50px;
+  font-size: 32px;
   text-align: center;
-  width: 50%;
-  font-size: 30px;
+  flex: 1;
 }
 
-.sociais {
-  display: flex;
-  justify-content: flex-end;
-  width: 25%;
-  padding-right: 30px;
+.sociais img {
+  width: 40px;
+  margin-left: 10px;
 }
 
 /* ====== BANNER ====== */
@@ -72,38 +72,45 @@ header {
   margin-bottom: 30px;
 }
 
+/* Aqui o segredo: grid flexível para os 12 alunos */
 .estudantes_todos {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .estudante-div {
+  background-color: #fff8e6;
   text-align: center;
-  background: #fff8e6;
-  padding: 20px;
   border-radius: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  width: 180px;
-  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  width: 200px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .estudante-div:hover {
   transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
 
 .estudante-imagem {
   width: 120px;
+  height: 120px;
   border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 10px;
 }
 
 .estudante-nome {
-  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 600;
-  color: #333;
+  margin-bottom: 10px;
 }
 
 .estudante-icone {
