@@ -1,4 +1,3 @@
-/* ====== REGRAS GERAIS ====== */
 * {
   margin: 0;
   padding: 0;
@@ -27,9 +26,6 @@ header {
 
 .cabecalho_imagem {
   width: 10%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .titulo_site {
@@ -58,47 +54,61 @@ header {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
-  opacity: 0; /* invisível no início */
-  transform: scale(1.1); /* começa com zoom */
-  transition: all 1.5s ease; /* animação suave */
+  opacity: 0;
+  transform: scale(1.1);
+  transition: all 1.5s ease;
 }
 
 /* ====== ESTUDANTES ====== */
-.estudante_titulo {
-  padding: 50px;
-  text-align: center;
-  font-size: 28px;
+.estudante {
+  background-color: #faae43;
+  padding: 40px 0;
 }
 
-.estudante-nome {
+.estudante_titulo {
   text-align: center;
-  margin-top: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.estudantes_todos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.estudante-div {
+  text-align: center;
+  background: #fff8e6;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 180px;
+  transition: transform 0.3s;
+}
+
+.estudante-div:hover {
+  transform: scale(1.05);
 }
 
 .estudante-imagem {
   width: 120px;
   border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.estudante-nome {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
 }
 
 .estudante-icone {
-  width: 38px;
-  padding: 4px 8px;
-}
-
-.estudante {
-  background-color: #faae43;
-  padding: 24px 0;
-}
-
-.estudante-div {
-  text-align: center;
-  padding: 24px 0;
-}
-
-.estudantes_todos {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  width: 30px;
+  margin: 0 5px;
 }
 
 /* ====== RODAPÉ ====== */
@@ -106,11 +116,6 @@ header {
   background-image: linear-gradient(#40A2E3, #7FC2EF);
   color: white;
   padding: 24px 0;
-  text-align: center;
-}
-
-.escola-titulo {
-  padding: 20px;
   text-align: center;
 }
 
@@ -122,4 +127,8 @@ header {
 .link {
   color: #ffffff;
   text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
