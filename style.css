@@ -6,11 +6,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
-  color: #333;
 }
 
-/* ====== CABEÇALHO ====== */
+/* ===== CABEÇALHO ===== */
 header {
   background-color: #424e61;
   color: white;
@@ -19,16 +17,16 @@ header {
 }
 
 .cabecalho-itens {
-  max-width: 1980px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cabecalho_imagem {
-  width: 100px;
+  width: 80px;
 }
 
 .titulo_site {
@@ -42,7 +40,7 @@ header {
   margin-left: 10px;
 }
 
-/* ====== BANNER ====== */
+/* ===== BANNER ===== */
 .banner1 {
   display: flex;
   justify-content: center;
@@ -59,7 +57,7 @@ header {
   transition: all 1.5s ease;
 }
 
-/* ====== ESTUDANTES ====== */
+/* ===== ALUNOS ===== */
 .estudante {
   background-color: #faae43;
   padding: 40px 0;
@@ -72,70 +70,14 @@ header {
   margin-bottom: 30px;
 }
 
-/* Aqui o segredo: grid flexível para os 12 alunos */
 .estudantes_todos {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 30px;
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.estudante-div {
-  background-color: #fff8e6;
-  text-align: center;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  width: 200px;
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.estudante-div:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-}
-
-.estudante-imagem {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.estudante-nome {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.estudante-icone {
-  width: 30px;
-  margin: 0 5px;
-}
-
-/* ====== RODAPÉ ====== */
-.escola {
-  background-image: linear-gradient(#40A2E3, #7FC2EF);
-  color: white;
-  padding: 24px 0;
-  text-align: center;
-}
-
-.logo_rodape {
-  height: 80px;
-  padding: 12px 0;
-}
-
-.link {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
+.estudante-div
